@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of contents
 
-## Available Scripts
+1. [React Standard README](docs/STD_REACT_README.md)
+2. [Hikers Guide lines](#Hikers-Guide-lines)
+   1. [Style Guides](#Style-Guides)
+   2. [Code Documentation](#Code-Documentation)
+   3. [Design Patterns](#Design-Patterns)
 
-In the project directory, you can run:
 
-### `npm start`
+## Hikers Guide lines
+The Hikers enterprise uses the following code quality standards throughout it's web projects:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Style Guides
+* [JSX](https://github.com/airbnb/javascript/tree/master/react)
+* [CSS](https://github.com/airbnb/javascript/tree/master/css-in-javascript)
+* [JS](https://github.com/airbnb/javascript)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Code Documentation:
+* [React](https://react-styleguidist.js.org/docs/documenting.html)
 
-### `npm test`
+#### Design Patterns
+For this project we use the **MVP** ─ *Model View Presenter* ─ design pattern, with the addition of **Provider** and **Reducer** files used to control states in React.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+So, Just for the sake of naming things, we called it **MVP - PR** pattern. With is further explained bellow:
+* M - Model: Retrieves and manipulates data, access APIS and any other action regarding data storage and fetching.
 
-### `npm run build`
+* V - View: Is a passive interface that display data and routes user commands to the presenter.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* P - Presenter: Retrieve data from model and formats it for display in the view.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* P - Provider:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* R - Reducer:
